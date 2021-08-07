@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WIELearner" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/themeorange</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/Black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/Black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="drawerArrowStyle">@style/myhamburger</item>
+    </style>
+    <style name="Myhintstyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/themeorange</item>
+        <item name="colorControlActivated">@color/themeorange</item>
+        <item name="colorControlHighlight">@color/themeorange</item>
+        <item name="colorControlNormal">@color/themeorange</item>
+    </style>
+
+    <style name="myhamburger" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/themeorange</item>
+    </style>
+    <style name="Theme.Corsyn11.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="android:textColorPrimary">@color/themeorange</item>
+    </style>
+    <style name="Theme.Corsyn11.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

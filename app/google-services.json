@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "872227341769",
+    "project_id": "study-app-1f462",
+    "storage_bucket": "study-app-1f462.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872227341769:android:51cc2a1d7a95c81dc51418",
+        "android_client_info": {
+          "package_name": "com.saggy.wielearner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "872227341769-rpacuaulh779q21i22bmpt3lpmhnnscr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saggy.wielearner",
+            "certificate_hash": "e20e00fe8f99e37d0a32ce3b29d0fe81f2775dae"
+          }
+        },
+        {
+          "client_id": "872227341769-3i1tpie69fevc6si2arm0diublsaon2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnwe-4feywncIupQN9BIY1ewvoqKqxKi4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "872227341769-3i1tpie69fevc6si2arm0diublsaon2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

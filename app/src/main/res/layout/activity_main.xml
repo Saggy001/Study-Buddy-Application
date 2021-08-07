@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/thememediumgray"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_wavepair"
+        android:id="@+id/rllayout"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="40sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rllayout"
+        android:textColor="@color/themeorange"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:textAlignment="center"
+        android:id="@+id/rld" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textdraw"
+        android:layout_marginTop="50dp"
+        android:id="@+id/rll"
+        android:layout_below="@id/rld"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            app:hintTextAppearance="@style/Myhintstyle"
+            android:textColorHint="@color/themeorange"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailedit1layout"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="  EMAIL ID"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:textSize="18sp"
+                android:textColor="@color/White"
+                android:background="@color/thememediumgray"
+                android:inputType="textEmailAddress"
+                android:id="@+id/emailedit" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            app:hintTextAppearance="@style/Myhintstyle"
+            android:textColorHint="@color/themeorange"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailedit1layout"
+            android:id="@+id/passedit1layout"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="  PASSWORD"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:textSize="18sp"
+                android:textColor="@color/White"
+                android:background="@color/thememediumgray"
+                android:inputType="textPassword"
+                android:id="@+id/passedit" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/forgetpass"
+            android:textSize="16sp"
+            android:textColor="@color/themeorange"
+            android:layout_below="@id/passedit1layout"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="16sp"
+            android:layout_marginEnd="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/signup"
+            android:textColor="@color/themeorange"
+            android:layout_below="@id/passedit1layout"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonroun"
+        android:layout_below="@+id/rll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:id="@+id/relativebutton">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            android:id="@+id/loginbt"
+            android:background="@color/transparent"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_wave"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

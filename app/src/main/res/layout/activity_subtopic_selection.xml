@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubtopicSelection"
+    android:background="@color/themedarkgray">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/thememediumgray"
+        android:id="@+id/toolbar"
+        android:layout_marginBottom="5dp"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/White" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subjectnamehead"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/White" />
+    </Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="select topic you want to study"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="15dp"
+        android:id="@+id/tag"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tag"
+        android:id="@+id/recycleview"
+        />
+
+</RelativeLayout>

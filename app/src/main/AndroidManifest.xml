@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saggy.wielearner">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WIELearner">
+        <activity android:name=".TopicQuiz"/>
+        <activity android:name=".HelpdeskNext" />
+        <activity android:name=".SearchSubject" />
+        <activity android:name=".SubjectSelection" />
+        <activity android:name=".QuizzesTemplate" />
+        <activity android:name=".QuizEnd" />
+        <activity android:name=".CourseDetail" />
+        <activity android:name=".SubtopicSelection" />
+        <activity android:name=".TopicSelection" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Helpdesk" />
+        <activity android:name=".MoreActivity" />
+        <activity android:name=".Leaderboard" />
+        <activity android:name=".Settings" />
+        <activity android:name=".MyProgress" />
+        <activity android:name=".Notification" />
+        <activity
+            android:name=".Home_Activity"
+            android:label="@string/title_activity_home" />
+        <activity android:name=".Registration_Activity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

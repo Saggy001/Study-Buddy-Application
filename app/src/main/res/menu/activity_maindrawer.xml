@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/weeklyleaderboard"
+            android:icon="@drawable/ic_baseline_poll_24"
+            android:title="Weekly Leaderboard" />
+        <item
+            android:id="@+id/myprogress"
+            android:icon="@drawable/ic_progress"
+            android:title="My Progress" />
+        <item
+            android:id="@+id/Bookmark"
+            android:icon="@drawable/ic_baseline_autorenew_24"
+            android:title="Change Subjects" />
+    </group>
+
+
+    <group android:id="@+id/settingview"
+        android:checkableBehavior="none">
+            <item
+                android:id="@+id/setting"
+                android:icon="@drawable/ic_settings"
+                android:title="My Info &amp; Setting" />
+            <item
+                android:id="@+id/more"
+                android:icon="@drawable/ic_more"
+                android:title="More" />
+    </group>
+
+    <group android:checkableBehavior="none"
+        android:id="@+id/communication">
+            <item
+                android:id="@+id/helpdesk"
+                android:icon="@drawable/ic_baseline_help_outline_24"
+                android:title="HelpDesk" />
+            <item
+                android:id="@+id/chatwithus"
+                android:icon="@drawable/ic_baseline_assignment_24"
+                android:title="About Us" />
+    </group>
+
+    <group
+        android:checkableBehavior="none"
+        android:id="@+id/logoutb">
+        <item android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_baseline_power_settings_new_24"
+            />
+    </group>
+</menu>

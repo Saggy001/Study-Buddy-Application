@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopicQuiz"
+    android:background="@color/thememediumgray">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/themedarkgray"
+        android:id="@+id/toolbar"
+        android:layout_marginBottom="5dp"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backbutton"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="@color/transparent"
+            app:tint="@color/White" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subjectnamehead"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/White" />
+    </Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/recycleview"
+        />
+
+</RelativeLayout>
